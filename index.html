@@ -14,12 +14,36 @@
         <!-- Relative links do not include the domain name  -->
         <a href="./pages/about.html">About</a>
 
-        <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project's Odin head as an example of absolute path for images.">
-        
-        <!-- In the old days img tag comes with an forward slash on the end (<img />), but in HTML5 it's not necessary anymore. -->
-        <img src="./images/dog.jpg" alt="Charles, a dog, in all his glory! An axample of relative path for images.">
+        <!-- Root-relative paths starts with forward slash (/) -->
 
-        <!-- For images (and other project's folders/files) use only letters and dashs, avoiding spaces, numbers, capital letters and symbols. -->
+        <!-- In the old days img tag comes with an forward slash on the end (<img />), but in HTML5 it's not required anymore. -->
+        <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project's Odin head as an example of absolute path for images." width="75">
+        <!-- The width attribute is defined in pixels, so adding an unit is incorrect. There is a height attribute as well. Setting only will scale proportionally. Setting both will stretch the image. -->
+        
+        <img src="./images/dog.jpg" alt="Charles, a dog, in all his glory! An axample of relative path for images." width="75">
+        
+        <!-- For images (and other project's folders/files) use only lowercase characters and hyphens, avoiding spaces, numbers, uppercase characters and symbols. -->
         <!-- Four main images formats to use on the internet: JPG (photos), GIF (simple animations), PNG (icons, diagrams, logos) and SVG (responsiveness) -->
+
+        <h2>HTML Entities</h2>
+        <ul>
+            <li>
+                <h2>Reserved characters</h2>
+                <ul>
+                    <li>&lt; - less-than</li>
+                    <li>&gt; - greater-than</li>
+                    <li>&amp; - ampersand</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Quotes (not required with UTF-8 encoding)</h2>
+                <ul>
+                    <li>&ldquo; - left double quotation</li>
+                    <li>&rdquo; - right double quotation</li>
+                    <li>&lsquo; - left single quotation</li>
+                    <li>&rsquo; - right single quotation</li>
+                </ul>
+            </li>
+        </ul>
     </body>
 </html>
